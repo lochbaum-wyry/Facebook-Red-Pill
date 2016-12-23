@@ -1,0 +1,14 @@
+{
+    "name": "Facebook-Red-Fill",
+    "version": "1.0",
+    "options_page": "",
+    "background_page": "main.html", //sitio el cual se cargara por debajo para correr la extension
+    "description": "Extension para simplificar el uso de Facebook",
+    "browser_action": {
+        "default_icon": "", //icono de la extension
+        "popup":"" //sitio que se cargara al hacer click en el icono, sera de utilidad para configuraciones
+    },
+    "permissions": [
+        "tabs"
+    ]
+}

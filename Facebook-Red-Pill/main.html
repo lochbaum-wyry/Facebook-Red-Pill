@@ -1,0 +1,5 @@
+<script>
+ chrome.tabs.onCreated.addListener(function(tab) {
+        alert('La URL de la nueva pestaña es: ' + tab.url);
+ });
+</script>
