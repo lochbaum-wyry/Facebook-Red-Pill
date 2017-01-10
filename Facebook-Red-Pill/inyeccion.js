@@ -1,0 +1,1 @@
+document.body.innerHTML = 'a'+document.body.innerHTML;

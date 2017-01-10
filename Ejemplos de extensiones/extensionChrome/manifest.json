@@ -1,0 +1,13 @@
+{
+"name": "Mi cuarta extension",
+"version": "1.0",
+"background_page": "background.html",
+"options_page": "opciones.html",
+"description": "Aprendiendo a usar archivos de configuracion",
+"browser_action": {
+"default_icon": "icono.png"
+},
+"permissions": [
+"tabs"
+]
+}
