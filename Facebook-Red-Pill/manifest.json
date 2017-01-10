@@ -6,7 +6,7 @@
         "scripts": ["background.js"]
       },
     "options_page": "options.html",
-    "description": "Aprendiendo a usar archivos de configuracion",
+    "description": "Extension para manejar el uso de la informacion dentro de Facebook",
     "icons": {
         "16": "icono.png",
         "48": "icono.png",
