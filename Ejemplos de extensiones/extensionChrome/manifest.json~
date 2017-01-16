@@ -1,6 +1,5 @@
 {
 "name": "Mi cuarta extension",
-"manifest_version": 2,
 "version": "1.0",
 "background": {
         "scripts": ["background.js"]
