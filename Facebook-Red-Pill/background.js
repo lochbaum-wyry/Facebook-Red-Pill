@@ -1,23 +1,23 @@
+document.writeln("<script type='text/javascript' src='easytimer.js-master/dist/easytimer.min.js'></script>");
+document.writeln("<script type='text/javascript' src='jquery.min.js'></script>");
+
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) { //Colocamos la extension a la escucha de que una pagina Web sea visitada o actualizada.
-	
+
 	if(tab.url.indexOf("facebook") != -1){
-		alert("Estas visitando la pagina facebook");
 		startTimer()
 	}
-	else 
-		{
-			resetTimer()
-		}
 	
 });
 
+    
 function startTimer(){
-	
+	var timer = new Timer();
+	timer.start();
+	timer.addEventListener('secondsUpdated', function (e) {
+    	$('#basicUsage').html(timer.getTimeValues().toString());
+	});
 }
 
-function resetTimer(){
-
-}
 
 //chrome.tabs.onUpdated.addListener(function(tab, estado) { //Colocamos la extension a la escucha de que una pagina Web sea visitada o actualizada.
 //    if(estado.status == 'complete'){ //Si la pagina se ha terminado de cargar
