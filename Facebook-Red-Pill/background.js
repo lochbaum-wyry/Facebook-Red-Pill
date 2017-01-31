@@ -8,7 +8,8 @@ chrome.webNavigation.onCompleted.addListener(function(e) {
 
 	//var conf = rp.getConfUrl(e.url); 
 	//if ( conf.url !== null )  
-	chrome.tabs.executeScript(e.tabId, {'file':'timerScript.js'}); //Inyecta el código del fichero inyeccion.js
+
+	//chrome.tabs.executeScript(e.tabId, {'file':'timerScript.js'}); //Inyecta el código del fichero inyeccion.js
 
 });
 
