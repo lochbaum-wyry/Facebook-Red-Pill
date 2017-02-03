@@ -1,9 +1,9 @@
 ﻿{
-	"name": "Window-Usage-Manager",
+	"name": "Windows-Usage-Manager",
 	"version": "1.0",
 	"manifest_version": 2,
 
-	"description": "Extension para manejar el uso de las pestañas",
+	"description": "Extension para administrar el uso de las pestañas",
 	"icons": {
 		"16": "icono.png",
         "48": "icono.png",
@@ -15,7 +15,7 @@
 		"default_title": "Window-Usage-Manager"
 	},
 	"content_scripts": [ {
-	"js": [ "js/lib/jquery-1.8.2.min.js", "js/app/content.js" ],
+	"js": [ "js/lib/jquery.min.js", "js/app/content.js" ],
 	"matches": [ "*://*/*" ],
 	"run_at": "document_start"
 	} ],
