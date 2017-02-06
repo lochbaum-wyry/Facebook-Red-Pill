@@ -20,6 +20,8 @@ function configSitesCtrl($scope, PageInfoService, $localStorage) {
         element = {'site': vm.site, 'time': vm.time};
         vm.list.push(element);
         $localStorage.list = vm.list;
+
+
     }
 }
 

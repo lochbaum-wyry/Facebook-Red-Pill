@@ -1,4 +1,6 @@
-﻿var myApp = angular.module('WindowsUsageManager', [
+﻿'use strict';
+
+var myApp = angular.module('WindowsUsageManager', [
   'ngRoute'
 ])
 .config(function($routeProvider){
@@ -13,4 +15,9 @@ $routeProvider
         controller: 'ConfigSitesCtrl',
         controllerAs: 'conf'
       })
+  .otherwise({
+        templateUrl: 'views/configSites.html',
+        controller: 'ConfigSitesCtrl',
+        controllerAs: 'conf'
+      });
 });

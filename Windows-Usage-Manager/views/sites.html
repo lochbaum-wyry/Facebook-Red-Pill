@@ -1,1 +1,15 @@
-<p>Holaa</p>
+<table class="table">
+      <thead>
+      <tr>
+        <td><strong>Site</strong></td>
+        <td><strong>Time</strong></td>
+      </tr>
+      </thead>
+      <tbody dir-paginate="elem in conf.list">
+      <tr ng-model="elem.selected">
+        <td>{{elem.site}}</td>
+        <td>{{elem.time}} min</td>
+        <td><button type="button" ng-click="conf.editSite(elem)" class ="btn btn-success glyphicon glyphicon-ok-sign"></button></td>
+      </tr>
+      </tbody>
+</table>
