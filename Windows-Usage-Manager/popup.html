@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html ng-app="WindowsUsageManager" ng-csp>
+    <head>
+        <link rel="stylesheet" href="css/popup.css">
+
+        <!--<script src="js/lib/jquery-1.8.2.min.js"></script>-->
+        <script src="js/lib/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <script src="js/lib/jquery.min.js"></script> <!-- Including jQuery -->
+        <script src="js/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> <!-- Our script file -->
+
+        <script src="js/app/app.js"></script>
+        <script src="js/app/popup.js"></script>
+
+        <script src="js/node_modules/node_modules/angular-route/angular-route.js"></script>        
+
+    </head>
+    <body id="popup">
+        <nav class="" role="navigation">
+            <header>
+                <h1>Windows Usage Manager</h1>
+            </header>
+
+                <ul class="nav nav-tabs " >
+                    <li>
+                        <a href="#configSites"> <span> Add Site </span> </a>
+                    </li>
+                    <li>
+                        <a href="#sites"> <span> Sites </span> </a>
+                    </li>
+                </ul>
+        </nav>        
+    
+        <div class="right_col" role="main" ng-view="" ></div>
+        <hr />
+        
+
+    </body>
+</html>
+
+
+<!--
+    <div>{{message}}</div>
+            <h2>Page:</h2>
+            <div>{{title}}</div>
+            <div>{{url}}</div>
+            <h2>Has Links:</h2>
+            <ul>
+                <li ng-repeat="pageInfo in pageInfos">
+                    <div>{{pageInfo.url}}</div>
+                </li>                       
+            </ul>
+-->
